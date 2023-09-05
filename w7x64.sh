@@ -11,7 +11,7 @@ echo Downloading File From akuh.net
 apt install qemu-kvm -y
 echo "Wait"
 echo "Starting Windows"
-qemu-system-x86_64 -hda win2012.img -m 4G -cpu host -smp cores=2,hostfwd=tcp::3388-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device rtl8139,netdev=n0 -netdev user,id=n0 -vga qxl -accel kvm &>/dev/null &
+qemu-system-x86_64 -hda w7x64.img -m 4G -cpu host -smp cores=2,hostfwd=tcp::3388-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device rtl8139,netdev=n0 -netdev user,id=n0 -vga qxl -accel kvm &>/dev/null &
 clear
 echo RDP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
