@@ -1,6 +1,6 @@
 apt-get update
 echo "Download windows files"
-wget -O win2012.img https://bitly.ws/TXPD
+wget -O win2012.img https://bitly.ws/TXUZ
 echo "Download ngrok"
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
