@@ -2,7 +2,7 @@ apt-get update
 echo "Install QEMU"
 apt install qemu-kvm -y
 echo "Download windows files"
-wget -O win2008.iso https://bitly.ws/U2BA
+wget -O win2008.iso https://bitly.ws/U2Gs
 echo "Download bios64"
 wget -O bios64.bin https://github.com/BlankOn/ovmf-blobs/raw/master/bios64.bin
 echo "Create win2008.img"
